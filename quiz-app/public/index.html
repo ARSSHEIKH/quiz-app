@@ -13,48 +13,65 @@
     .card:hover{
       border: 1px solid #777;
     }
+    .main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    .dvLeft, .dvRight{
+        flex: 1;
+    }
+    .dvMid{
+        flex: 3;
+    }
   </style>
 <body>
     <h2 align="center">ARS Quiz App</h2>
 <br>
-        <div class="row row-cols-1 row-cols-md-3" >
-          <div class="col mb-4" onclick="htmlQuiz()">
-            <div class="card">
-              <img src="images/html-logo.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">HTML 5</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural</p>
-              </div>
+    <div class="container main">
+        <div class="dvLeft"></div>
+        <div class="dvMid">
+            <div class="row row-cols-1 row-cols-md-3" >
+            <div class="col mb-4" onclick="htmlQuiz()">
+                <div class="card">
+                <img src="images/html-logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HTML 5</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural</p>
+                </div>
+                </div>
             </div>
-          </div>
-          <div class="col mb-4" onclick="cssQuiz()">
-            <div class="card">
-              <img src="images/css-logo.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">CSS 3</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural</p>
-              </div>
+            <div class="col mb-4" onclick="cssQuiz()">
+                <div class="card">
+                <img src="images/css-logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">CSS 3</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural</p>
+                </div>
+                </div>
             </div>
-          </div>
-          <div class="col mb-4" onclick="jsQuiz()">
-            <div class="card">
-              <img src="https://www.easyprogramming.net/logo/js.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">JavaScript</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural</p>
-              </div>
+            <div class="col mb-4" onclick="jsQuiz()">
+                <div class="card">
+                <img src="https://www.easyprogramming.net/logo/js.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural</p>
+                </div>
+                </div>
             </div>
-          </div>
-          <div class="col mb-4" onclick="csharpQuiz()">
-            <div class="card">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">C#</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural</p>
-              </div>
+            <div class="col mb-4" onclick="csharpQuiz()">
+                <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">C#</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural</p>
+                </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
+        <div class="dvRight"></div>
+    </div>
         <script src="app.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
